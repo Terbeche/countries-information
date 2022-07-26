@@ -18,14 +18,6 @@ const Navigation = () => (
             Countries
           </NavLink>
         </li>
-        <li className="linkItems">
-          <NavLink
-            className={({ isActive }) => (isActive ? 'activeClassName' : '')}
-            to="my-profile"
-          >
-            My Profile
-          </NavLink>
-        </li>
       </ul>
     </nav>
   </header>

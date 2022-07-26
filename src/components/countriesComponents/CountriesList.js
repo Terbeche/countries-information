@@ -13,7 +13,11 @@ const CountriesList = () => {
           id={Country.id}
           name={Country.name}
           population={Country.population}
-          reserved={Country.reserved}
+          area={Country.area}
+          capital={Country.capital}
+          continent={Country.continent}
+          flag={Country.flag}
+
         />
       ))}
     </div>
