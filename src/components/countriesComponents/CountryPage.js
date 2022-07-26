@@ -1,18 +1,23 @@
 import PropTypes from 'prop-types';
-// import { v4 as uuidv4 } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 
-const CountryPage = ({ dataList }) => (
-  <div>
-    <h2>{dataList[0].name}</h2>
-    <h2>{dataList[0].area}</h2>
-    <h2>{dataList[0].population}</h2>
-    <h2>{dataList[0].id}</h2>
-    <h2>{dataList[0].continent}</h2>
-  </div>
+const CountryPage = ({ data }) => {
+  const navigate = useNavigate();
 
-);
+  return (
+    <div>
+      <h2>{data[0].name}</h2>
+      <h2>{data[0].area}</h2>
+      <h2>{data[0].population}</h2>
+      <h2>{data[0].id}</h2>
+      <h2>{data[0].continent}</h2>
+      <img src={data[0].flag} alt={data[0].name} />
+      <button type="button" onClick={() => navigate(-1)}>Go back</button>
+    </div>
+  );
+};
 CountryPage.propTypes = {
-  dataList: PropTypes.node.isRequired,
+  data: PropTypes.node.isRequired,
 };
 
 export default CountryPage;

@@ -5,11 +5,10 @@ const Country = () => {
   const { Countries } = useSelector((state) => state.countries);
   const countryDetail = Countries.filter(({ show }) => show);
   console.log(countryDetail);
-
   return (
     <section>
       <div>
-        <CountryPage dataList={countryDetail} />
+        <CountryPage data={countryDetail} />
       </div>
     </section>
   );
