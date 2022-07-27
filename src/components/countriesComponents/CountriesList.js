@@ -6,7 +6,7 @@ const CountriesList = () => {
 
   return (
 
-    <div>
+    <div className="countries-container">
       {Countries.map((Country) => (
         <CountriesDisplay
           key={Country.id}

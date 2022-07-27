@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import '../css/Countries.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCountries } from '../redux/countries/countries';
 import CountriesList from './countriesComponents/CountriesList';

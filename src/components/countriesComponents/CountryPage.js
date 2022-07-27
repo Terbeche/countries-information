@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
-import '../../css/CountryPage.css';
+import { IoIosArrowBack } from 'react-icons/io';
 
 const CountryPage = ({ data }) => {
   const navigate = useNavigate();
 
   return (
-    <div className="country-container">
+    <div className="country-container country-detail">
       <div className="country-name">
         <p>Country</p>
         <h2>{data[0].name}</h2>
@@ -30,7 +30,7 @@ const CountryPage = ({ data }) => {
         <img src={data[0].flag} alt={data[0].name} />
       </div>
       <div className="back-home">
-        <button type="button" onClick={() => navigate(-1)}>Go back</button>
+        <button type="button" aria-label="Return to home page" onClick={() => navigate(-1)}><IoIosArrowBack /></button>
       </div>
 
     </div>

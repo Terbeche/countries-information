@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { getCountryDetails } from '../../redux/countries/countries';
+import '../../css/CountriesDisplay.css';
 
 const CountriesDisplay = ({
   id, name, population,
@@ -15,23 +16,20 @@ const CountriesDisplay = ({
   };
 
   return (
-    <div>
-      <ul className="countries-container">
-        <li key={id} className="country">
-
-          <div className="country-detail">
-            <button type="button" className="name" onClick={() => handleClick(name)}>{name}</button>
-            <div className="population">
-              <span>Population : </span>
-              <sapn>
-                {population}
-              </sapn>
-            </div>
-
+    <ul className="country-container">
+      <li key={id} className="country">
+        <div className="country-detail">
+          <button type="button" className="name" onClick={() => handleClick(name)}>{name}</button>
+          <div className="population">
+            <span>Population : </span>
+            <span>
+              {population}
+            </span>
           </div>
-        </li>
-      </ul>
-    </div>
+
+        </div>
+      </li>
+    </ul>
   );
 };
 

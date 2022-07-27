@@ -2,7 +2,8 @@ import '../../css/Navigation.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, Link } from 'react-router-dom';
 import React from 'react';
-
+import { FiSettings } from 'react-icons/fi';
+import { GrMicrophone } from 'react-icons/gr';
 import { filterCountries, fetchCountries } from '../../redux/countries/countries';
 
 const Navigation = () => {
@@ -56,10 +57,14 @@ const Navigation = () => {
         <ul className="navLinks Flex-1">
           <li className="linkItems">
             <NavLink
-              className={({ isActive }) => (isActive ? 'activeClassName' : '')}
               to="countries"
             >
-              Countries
+              <GrMicrophone />
+            </NavLink>
+            <NavLink
+              to="countries"
+            >
+              <FiSettings />
             </NavLink>
           </li>
         </ul>
