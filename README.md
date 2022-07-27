@@ -1,3 +1,5 @@
+![](https://img.shields.io/badge/Terbeche-Mostefa-violet)
+
 # countries-infomation
 
 > In this project, I have worked with the real live data from the RESTCountries API. This web application provides some information about more than 250 countries worldwide like the area, population, capital, continent, and the official flag.
@@ -15,7 +17,7 @@
 - ![](https://img.shields.io/badge/HTML-purple)
 - ![](https://img.shields.io/badge/CSS-blue)
 - ![](https://img.shields.io/badge/WEBPACK-violet)
-- ![](https://img.shields.io/badge/Barbel-violet)
+- ![](https://img.shields.io/badge/Babel-violet)
 - ![](https://img.shields.io/badge/API-black)
 - ![](https://img.shields.io/badge/JSON-violet)
 - ![](https://img.shields.io/badge/REACT-blue)
