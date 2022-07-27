@@ -31,6 +31,12 @@ const countriesSlice = createSlice({
       });
       state.Countries = singleCountry;
     },
+
+    filterCountries: (state, action) => {
+      const continentCountries = action.payload;
+      state.Countries = continentCountries;
+      console.log(state.Countries);
+    },
   },
   extraReducers: {
     [fetchCountries.fulfilled]: (state, action) => {
@@ -59,6 +65,6 @@ const countriesSlice = createSlice({
   },
 });
 
-export const { getCountryDetails, freeCountryDetails } = countriesSlice.actions;
+export const { getCountryDetails, filterCountries } = countriesSlice.actions;
 
 export default countriesSlice.reducer;
