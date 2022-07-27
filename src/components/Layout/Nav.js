@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { NavLink, Link } from 'react-router-dom';
 import React from 'react';
 import { FiSettings } from 'react-icons/fi';
-import { GrMicrophone } from 'react-icons/gr';
+import { BsMicFill } from 'react-icons/bs';
 import { filterCountries, fetchCountries } from '../../redux/countries/countries';
 
 const Navigation = () => {
@@ -37,7 +37,7 @@ const Navigation = () => {
       <nav className="nav">
         <div className="logo Flex-1">
           <Link to="/">
-            <h2>Countries Hub</h2>
+            <h2 className="logo-name">Countries Info</h2>
           </Link>
         </div>
         <div className="dropdown">
@@ -58,11 +58,16 @@ const Navigation = () => {
           <li className="linkItems">
             <NavLink
               to="countries"
+              className="single-item"
             >
-              <GrMicrophone />
+              <BsMicFill />
             </NavLink>
+
+          </li>
+          <li className="linkItems">
             <NavLink
               to="countries"
+              className="single-item"
             >
               <FiSettings />
             </NavLink>
