@@ -35,7 +35,6 @@ const countriesSlice = createSlice({
     filterCountries: (state, action) => {
       const continentCountries = action.payload;
       state.Countries = continentCountries;
-      console.log(state.Countries);
     },
   },
   extraReducers: {

@@ -16,14 +16,18 @@ const CountriesDisplay = ({
 
   return (
     <div>
-      <ul className="rocket-container">
-        <li key={id} className="Rocket">
+      <ul className="countries-container">
+        <li key={id} className="country">
 
-          <div className="Rocket-Detail Rocket-Part2">
+          <div className="country-detail">
             <button type="button" className="name" onClick={() => handleClick(name)}>{name}</button>
-            <p className="description">
-              {population}
-            </p>
+            <div className="population">
+              <span>Population : </span>
+              <sapn>
+                {population}
+              </sapn>
+            </div>
+
           </div>
         </li>
       </ul>
