@@ -21,6 +21,7 @@ const CountryPage = ({ data }) => {
             <p>Country</p>
             <p>Area</p>
             <p>Population</p>
+            <p>Capital</p>
             <p>Continent</p>
           </div>
           <div className="contry-information">
@@ -28,12 +29,13 @@ const CountryPage = ({ data }) => {
               <h2>{data[0].name}</h2>
             </div>
             <div className="country-area">
-
               <h2>{data[0].area}</h2>
             </div>
             <div className="country-population">
-
               <h2>{data[0].population}</h2>
+            </div>
+            <div className="country-capital">
+              <h2>{data[0].capital}</h2>
             </div>
             <div className="country-continent">
 

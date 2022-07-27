@@ -5,6 +5,7 @@
 .single-country {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 1.7rem;
   background-color: #4d7bd6;
   padding: 2rem;
