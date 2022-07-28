@@ -74,6 +74,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This project was based on the **RESTCountries API**
+- Design courtesy [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
 - Microverse
 
 ## 📝 License
