@@ -1,28 +1,34 @@
-import { INITIAL_DATA } from '../MockedData/InitialData';
-import { fetchCountries } from '../redux/countriEs/countriEs';
+import MOCKED, { INITIAL_DATA } from '../MockedData/MockedData';
+import reducers from '../redux/countries/countries';
 
 describe('Test for countries reducer', () => {
-  it('countries reducer should return empty list in the begining and loading true', () => {
+  it('reducer should return empty list in the begining and loading true', () => {
+    // Arrange
     const expectedData = {
-      loading: false,
+      loading: true,
       Countries: [],
     };
 
-    const reducedData = fetchCountries({});
+    // ACT
+    const reducedData = reducers(undefined, { type: undefined, payload: undefined });
 
+    // Assert
     expect(reducedData).toEqual(expectedData);
-    expect(reducedData.loading).toBeFalsy();
+    expect(reducedData.loading).toBeTruthy();
   });
 
-  it('Test reducer if returns the mock API data', () => {
+  it('reducer should return moked data', () => {
+    // Arrange
     const expectedData = INITIAL_DATA;
-    const FETCH_ACTION = 'countries/getCountries';
+    const initialState = {
+      loading: false,
+      Countries: [],
+    };
+    // ACT
+    const reducedData = reducers(initialState, { type: 'countries/getCountries/fulfilled', payload: expectedData });
 
-    const reducedData = fetchCountries(undefined, {
-      type: FETCH_ACTION, loading: false, payload: expectedData,
-    });
-
-    expect(reducedData.Countries).toEqual(expectedData);
+    // Assert
+    expect(reducedData.Countries).toEqual(MOCKED);
     expect(reducedData.loading).toBeFalsy();
   });
 });

@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 import CountriesDisplay from './CountriesDisplay';
 
 const CountriesList = () => {
@@ -9,8 +10,8 @@ const CountriesList = () => {
     <div className="countries-container">
       {Countries.map((Country) => (
         <CountriesDisplay
-          key={Country.id}
-          id={Country.id}
+          key={uuidv4()}
+          id={uuidv4()}
           name={Country.name}
           population={Country.population}
           area={Country.area}

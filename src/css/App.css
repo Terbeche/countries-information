@@ -5,3 +5,10 @@
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.2rem;
 }
+
+.loading {
+  color: #2e5fe6;
+  margin-left: 2rem;
+  margin-top: 10rem;
+  font-size: 2rem;
+}

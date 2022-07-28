@@ -1,11 +1,10 @@
 /* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice, current } from '@reduxjs/toolkit';
-import { v4 as uuidv4 } from 'uuid';
 
 const countriesAPI = 'https://restcountries.com/v3.1/all';
 
 const INITIAL_STATE = {
-  loading: false,
+  loading: true,
   Countries: [],
 };
 
@@ -40,7 +39,6 @@ const countriesSlice = createSlice({
   extraReducers: {
     [fetchCountries.fulfilled]: (state, action) => {
       const countriesArr = action.payload.map((item) => ({
-        id: uuidv4(),
         name: item.name.common,
         population: item.population,
         area: item.area,

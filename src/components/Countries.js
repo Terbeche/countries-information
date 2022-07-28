@@ -16,7 +16,7 @@ const Countries = () => {
   return (
 
     <div>
-      {loading && <div>Loading ...</div>}
+      {loading && <div className="loading">Loading ...</div>}
       {!loading && (<CountriesList />)}
 
     </div>
