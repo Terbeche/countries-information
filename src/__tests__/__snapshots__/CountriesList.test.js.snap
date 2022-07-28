@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountriesDisplay component snapshot testing 1`] = `
+<div
+  className="countries-container"
+/>
+`;

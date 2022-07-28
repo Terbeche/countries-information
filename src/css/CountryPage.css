@@ -1,0 +1,52 @@
+.country-page {
+  margin-top: 7rem;
+}
+
+.single-country {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1.7rem;
+  background-color: #4d7bd6;
+  padding: 2rem;
+  width: 100%;
+}
+
+.country-flag {
+  width: 50%;
+}
+
+.flag-image {
+  width: 100%;
+  min-width: 10rem;
+}
+
+.contry-information-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.back-home {
+  margin: 1rem;
+}
+
+.back-home-btn {
+  color: #4d7bd6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+@media only screen and (max-width: 420px) {
+  .single-country {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.7rem;
+    background-color: #4d7bd6;
+    padding: 2rem;
+    width: 100%;
+  }
+}

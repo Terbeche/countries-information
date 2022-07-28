@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Dancing+Script:wght@700&family=Finlandica:ital,wght@1,500&family=Inter:wght@400;500;700&family=Poppins&family=Roboto:wght@700&display=swap');
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 2rem;
+  background: #4d7bd6;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  gap: 0.5rem;
+}
+
+.Flex-1 {
+  flex: 1 1 40%;
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-name {
+  color: white;
+  font-family: 'lato', sans-serif;
+}
+
+.logo img {
+  height: 72px;
+  object-fit: cover;
+}
+
+.navLinks {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 5rem;
+  flex-wrap: wrap;
+}
+
+.linkItems {
+  text-align: center;
+  margin-left: 3rem;
+  transition: all 1s;
+}
+
+.linkItems a {
+  border-radius: 3px;
+}
+
+.single-item {
+  color: white;
+}
+
+.linkItems a:hover {
+  color: #fff;
+}
+
+.linkItems:hover {
+  background: rgb(5, 5, 115, 0.9);
+}
+
+.dropbtn {
+  background-color: white;
+  color: #4d7bd6;
+  padding: 0.7rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: 'lato', sans-serif;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #4d7bd6;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+} */
+
+.dropdown button:hover {
+  color: #fff;
+  background-color: #4d7bd6;
+  border: solid 1px #fff;
+}
+
+.show { display: flex; }
+.hide { display: none; }
+
+@media only screen and (min-width: 360px) {
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 2rem;
+    background: #4d7bd6;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    gap: 0.5rem;
+  }
+}
