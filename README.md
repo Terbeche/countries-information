@@ -25,7 +25,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://countries-information.herokuapp.com/)
+[Live Demo Link](https://countries-information-api.netlify.app/)
 
 ## Author
 
